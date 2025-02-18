@@ -1,7 +1,7 @@
 //Loan Eligibilty Checker 
 
 #include<stdio.h>
-void readDetails(float* p_salary , int *p_score , int *p_exp){
+void readDetails(float* p_salary , int *p_score , int *p_expr){
     printf("Enter Salary : ");
     scanf("%f",p_salary);
 
@@ -9,18 +9,18 @@ void readDetails(float* p_salary , int *p_score , int *p_exp){
     scanf("%d",p_score);
 
     printf("Enter Experience : ");
-    scanf("%d",p_exp);
+    scanf("%d",p_expr);
 }
 
-int isEligible(float salary, int score , int exp){
-    return(salary>=30000 && score >= 750 && exp >= 2);
+int isEligible(float salary, int score , int expr){
+    return(salary>=30000 && score >= 750 && expr >= 2);
 }
 int main(){
     float salary;
     int score;
-    int exp;
-    readDetails(&salary,&score,&exp);
-    if(isEligible(salary,score,exp)){
+    int expr;
+    readDetails(&salary,&score,&expr);
+    if(isEligible(salary,score,expr)){
         printf("Loan Approved");
     } else{
         printf("Loan Rejected");
