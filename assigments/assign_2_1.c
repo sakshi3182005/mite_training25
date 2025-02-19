@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 // Function to calculate factorial recursively
-long long factorial(int n) {
+int factorial(int n) {
     if (n == 0 || n == 1) {
         return 1; // Base case: factorial of 0 or 1 is 1
     } else {
@@ -21,9 +21,9 @@ int main() {
         printf("Factorial is not defined for negative numbers.\n");
     } else {
         // Calculate factorial
-        long long result = factorial(number);
+         result = factorial(number);
         // Output the result
-        printf("Factorial of %d is %lld\n", number, result);
+        printf("Factorial of %d is %d\n", number, result);
     }
 
     return 0;
